@@ -13,7 +13,7 @@ server
   });
 
 server.get("/users", (req, res) => {
-  const db = new sqlite3.Database("./gik339-labb2.db");
+  const db = new sqlite3.Database("./server/gik339-labb2.db");
   db.all("SELECT * FROM USERS", (err, rows) => {
     if (err) {
       res.status(500).send(err);
