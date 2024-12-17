@@ -1,3 +1,6 @@
+const express = require("express");
+const server = express();
+
 server
   .use(express.json())
   .use(express.urlencoded({ extended: false }))
@@ -8,9 +11,6 @@ server
     next();
   });
 
-const express = require("express");
-const server = express();
-
-server.get("/users", (req, res) => {});
-
 server.listen(3000, () => console.log("Kör server 3000"));
+
+console.log("hej hej");
