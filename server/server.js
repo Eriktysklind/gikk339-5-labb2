@@ -13,4 +13,4 @@ server
 
 server.listen(3000, () => console.log("Kör server 3000"));
 
-console.log("hej");
+console.log("hej hej");
