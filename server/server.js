@@ -1,5 +1,6 @@
 const express = require("express");
 const server = express();
+const sqlite3 = require("sqlite3").verbose();
 
 server
   .use(express.json())
@@ -11,6 +12,5 @@ server
     next();
   });
 
+server.get("/users", (req, res) => {});
 server.listen(3000, () => console.log("Kör server 3000"));
-
-console.log("hej hej");
