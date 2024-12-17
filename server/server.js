@@ -22,4 +22,5 @@ server.get("/users", (req, res) => {
     }
   });
 });
+
 server.listen(3000, () => console.log("Kör server 3000"));
