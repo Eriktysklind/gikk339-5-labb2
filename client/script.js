@@ -27,6 +27,3 @@ fetch(url)
   });
 
 document.body.appendChild(ul);
-
-/* const newDiv = document.getElementById("newDiv");
-newDiv.appendChild(ul); */
